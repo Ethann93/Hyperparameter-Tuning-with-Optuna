@@ -60,17 +60,45 @@ We utilize Optuna's visualization tools to gain insights into the optimization p
 
 The optimization history plot illustrates the progression of the optimization process, showing how the objective function value changes over trials. It helps us assess the efficiency and effectiveness of our optimization approach.
 
+![newplot](https://github.com/Ethann93/Hyperparameter-Tuning-with-Optuna/assets/133777296/dca3361a-2901-4811-b124-02ddecbc6a97)
+
+
+The Optimization History Plot can observe how the search for **hyperparameters evolved.** The plot helps in understanding whether the optimization process improved the objective function over time or if it converged quickly to a good solution. It can be useful for making decisions about the effectiveness of your hyperparameter optimization approach, such as whether you need to conduct more trials or if you've already reached a satisfactory result.
+
+Accoroding to our graph, our model reached its best value by the 33rd trial, where after that trail the objective values stayed the same.
+
+In summary, the plot illustrates the **progress of our hyperparameter optimization** study by showing how the objective function value changes as you conduct more trials. This can provide valuable insights into the **efficiency and effectiveness of your optimization process.**
+
 #### Parallel Coordinate Plot
 
 The parallel coordinate plot reveals relationships between hyperparameters and their corresponding objective function values. It assists in understanding how certain hyperparameter values are selected together and their impact on the objective function.
+
+![newplot](https://github.com/Ethann93/Hyperparameter-Tuning-with-Optuna/assets/133777296/629692a4-8c97-4f6c-a30f-2dd236d1ceed)
+
+The plot illustrates serval important aspects:
+
+1) **Hyperparameter Relationships:** Each vertical axis represents a hyperparameter, and the horizontal lines connecting different axes illustrate how the values of these hyperparameters relate to each other during the optimization process. You can see how certain hyperparameter values are chosen together or in relation to one another.
+
+2. **Objective Function Values:** The color and thickness of each line segment in the plot represent the objective function value for a specific trial or combination of hyperparameters. Darker, thicker lines often indicate better objective function values, while lighter, thinner lines correspond to poorer results.
+
+3. **Optimal Configurations:** By visually inspecting the plot, we can identify regions of the plot where the lines converge, indicating successful configurations of hyperparameters that led to good objective function values. This helps you find optimal or promising combinations of hyperparameters.
+
+4. **Divergence and Exploration:** The spread of lines across the plot can also indicate how widely you explored the hyperparameter search space. Tight clusters suggest that the search was focused, while scattered lines may indicate that the search space was thoroughly explored.
 
 #### Slice Plot
 
 Slice plots allow us to explore the relationship between specific hyperparameters and the objective function value.
 
+![newplot](https://github.com/Ethann93/Hyperparameter-Tuning-with-Optuna/assets/133777296/34b2860f-7829-4715-9c6e-8835c3319384)
+
+These Plots provide insights into **the relationship between specific hyperparameters and the objective function value.** It visualizes how a particular hyperparameter or a combination of hyperparameters affects the optimization process.
+
 #### Hyperparameter Importances
 
 This visualization highlights the importance of each hyperparameter in the optimization process.
+
+![newplot](https://github.com/Ethann93/Hyperparameter-Tuning-with-Optuna/assets/133777296/a8aededb-df7b-42c1-aa79-db975c4b84e9)
+
 
 ### Best Hyperparameters
 
